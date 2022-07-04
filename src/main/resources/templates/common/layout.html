@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<body class="home page page-template page-template-template-portfolio page-template-template-portfolio-php">
+    <div id="page">
+    <!-- header fragment 사용 -->
+    <th:block th:replace="common/header :: header"></th:block>
+    <!-- content fragment 사용 -->
+		<div class="container">
+	   		<div layout:fragment="content"></div>
+	    </div>
+    <!-- footer fragment 사용 -->
+    <th:block th:replace="common/footer :: footer"></th:block>
+    </div>
+</body>
+</html>
